@@ -1,0 +1,85 @@
+.mainContainer {
+  background-color: black;
+  color: rgb(247, 231, 231);
+  margin: 0 auto;
+}
+
+.mainContainer h2{
+  font-weight: 800;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.myItems {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .myItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Add this line to align items vertically */
+    gap: 12px;
+  }
+}
+
+
+.mySearch input {
+  border-radius: 11px; /* Rounded corners */
+  border: 2px solid #ffffffd8; /* Thicker border */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 20px; /* More padding for better spacing */
+  outline: none; /* Remove the default focus outline */
+  width: 100%; /* Take full width of the container */
+}
+
+/* Add a hover effect */
+.mySearch input:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+/* Add a focus effect */
+.mySearch input:focus {
+  background-color: rgba(0, 0, 0, 0.8); /* Even darker background on focus */
+  border-color: #ffffff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(189, 149, 149, 0.5); /* Add a subtle box-shadow on focus */
+}
+
+/* Add transition for smoother hover and focus effects */
+.mySearch input {
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.filterBtn {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+
+}
+
+.filterBtn button {
+  border-radius: 5px;
+  background: #ffffff; /* Background color black */
+  border: none;
+  font-size: 18px;
+  color: #000000; /* Text color white */
+  padding: 5px 20px; /* Increased padding for better button appearance */
+  cursor: pointer; /* Add pointer cursor on hover for better UX */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+
+  /* Add a box-shadow for a subtle depth effect */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect: Darken the background color on hover */
+.filterBtn button:hover {
+  background: #b16767; /* Darker background color on hover */
+}
